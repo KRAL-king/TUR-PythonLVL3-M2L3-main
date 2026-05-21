@@ -7,12 +7,18 @@ class Question:
         self.options = options
 
     @property
-    def text(self):
+        def text(self):
         return self.__text 
 
     def gen_buttons(self):
-        # Görev 3 - Dahili klavyeyi oluşturmak için bir metot oluşturun
-        return buttons
+        butonlar= []
+        for indeks, cevap in enumerate(cevap_listesi):
+            Eğer cevap indeks doğru cevap indeks ise:
+                butonlar.append(ui.Button(label= cevap, style=ButtonStyle.primary, custom_id=f'correct_{indeks}'))
+            else:
+                butonlar.append(ui.Button(label= cevap, style=ButtonStyle.primary, custom_id=f'wrong_{indeks}'))
+        return butonlar
+            return buttons
 
 # Görev 4 - Listeyi sorularınızla doldurun
 quiz_questions = [
