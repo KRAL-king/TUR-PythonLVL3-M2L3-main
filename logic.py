@@ -7,7 +7,7 @@ class Question:
         self.options = options
 
     @property
-    def text(self):
+        def text(self):
         return self.__text 
 
     def gen_buttons(self):
