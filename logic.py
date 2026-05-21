@@ -7,8 +7,8 @@ class Question:
         self.options = options
 
     @property
-    def text(self):
-        return self.__text 
+ def get_real_name(self):
+        return self.__real_name
 
     def gen_buttons(self):
         # Görev 3 - Dahili klavyeyi oluşturmak için bir metot oluşturun
